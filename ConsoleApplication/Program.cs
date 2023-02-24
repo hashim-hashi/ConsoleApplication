@@ -26,7 +26,7 @@ namespace EmployeeSalaryTaxCalculator
             double MedicalAllowance = double.Parse(Console.ReadLine());
 
             // Salary
-            double Salary = BasicSalary * (DaysWorked/30);
+            double Salary = (BasicSalary/30) * DaysWorked;
 
             // Taxable Income
             double Exemptions = (Salary * HraPercent / 100) + ConveyanceAllowance + MedicalAllowance;
